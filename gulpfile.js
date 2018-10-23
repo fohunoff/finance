@@ -70,12 +70,11 @@ gulp.task('build', gulp.series([
 ]));
 
 /* Запуск сервера и отслеживание изменений */
-gulp.task('serve', gulp.series(['style'], function () {
+gulp.task('serve', function () {
   server.init({
     server: 'build/'
   });
 
   gulp.watch('src/sass/**/*.scss', gulp.series(['style']));
-  gulp.watch('build/*.html')
-    .on('change', server.reload);
-}));
+  gulp.watch('build/*.html').on('change', server.reload);
+});
