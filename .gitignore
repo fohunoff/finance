@@ -1,3 +1,5 @@
+**/*.psd
+
 node_modules/
 build/
 

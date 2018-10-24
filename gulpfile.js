@@ -80,6 +80,8 @@ gulp.task('serve', function () {
     server: 'build/'
   });
 
+  /* добавить watch для js */
+
   gulp.watch('src/sass/**/*.scss', gulp.series(['style']));
   gulp.watch('src/*.html').on('change', gulp.series(['copy-html', server.reload]));
 });
