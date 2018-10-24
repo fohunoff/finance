@@ -8,6 +8,9 @@ body {
   margin: 0;
 }
 
+
+
+/* Перенести в другой блок */
 .services {
 
   li {
@@ -47,6 +50,4 @@ body {
       @include sprite-icon--scale();
     }
   }
-
-
 } 
