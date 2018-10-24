@@ -8,7 +8,7 @@
     "start": "npm run build && gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Иван Загайнов",
   "license": "ISC",
   "dependencies": {
     "gulp": "^4.0.0"
