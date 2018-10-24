@@ -1,6 +1,52 @@
 @import 'variables';
+@import 'mixin-sprite.scss';
+
+/* Blocks */
 @import 'header/index';
 
 body {
   margin: 0;
 }
+
+.services {
+
+  li {
+    position: relative;
+    margin-left: 60px;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      left: -70px;
+
+      @include sprite();
+    }
+
+    &:nth-child(1)::before {
+      @include sprite-icon--bank();
+    }
+
+    &:nth-child(2)::before {
+      @include sprite-icon--case();
+    }
+
+    &:nth-child(3)::before {
+      @include sprite-icon--graph();
+    }
+
+    &:nth-child(4)::before {
+      @include sprite-icon--billfold();
+    }
+
+    &:nth-child(5)::before {
+      @include sprite-icon--lamp();
+    }
+
+    &:nth-child(6)::before {
+      @include sprite-icon--scale();
+    }
+  }
+
+
+} 
